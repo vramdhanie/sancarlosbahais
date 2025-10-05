@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bahá'ís of San Carlos
 
-## Getting Started
+A modern, responsive website for the Bahá'í community of San Carlos, California, built with Next.js and deployed on Firebase Hosting.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-15.5.4-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.1.0-blue?style=flat-square&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![Firebase](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=flat-square&logo=firebase)](https://firebase.google.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Deployment](https://img.shields.io/badge/Deployment-sancarlosbahais.org-orange?style=flat-square)](https://sancarlosbahais.org)
 
+## 🌟 Features
+
+- **Modern Design**: Clean, elegant interface with regal typography using Crimson Text and Inter fonts
+- **Responsive Layout**: Optimized for all devices from mobile to desktop
+- **Static Site Generation**: Fast loading with Next.js static export
+- **SEO Optimized**: Proper metadata and semantic HTML structure
+- **Accessibility**: WCAG compliant with proper alt text and keyboard navigation
+- **Performance**: Optimized images and efficient code splitting
+- **Community Focus**: Showcases local Bahá'í activities and community building
+
+## 🏗️ Tech Stack
+
+- **Framework**: Next.js 15.5.4 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4.0
+- **Fonts**: Crimson Text (serif) and Inter (sans-serif)
+- **Icons**: Lucide React
+- **Deployment**: Firebase Hosting
+- **Package Manager**: pnpm
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.0 or later
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/vramdhanie/sancarlosbahais.git
+cd sancarlosbahais
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+# or
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+pnpm dev
+# or
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### Building for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build
+# or
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The static files will be generated in the `out/` directory, ready for deployment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+sancarlosbahais/
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── globals.css        # Global styles and font definitions
+│   │   ├── layout.tsx         # Root layout with metadata
+│   │   └── page.tsx           # Home page
+│   └── components/            # Reusable React components
+│       ├── Header.tsx         # Hero section with logo
+│       ├── WelcomeSection.tsx # Community introduction
+│       ├── ActivitiesSection.tsx # Core activities showcase
+│       ├── AboutSection.tsx   # Bahá'í Faith information
+│       ├── ContactSection.tsx # Contact information
+│       ├── Footer.tsx         # Footer with links
+│       └── index.ts           # Component exports
+├── public/                    # Static assets
+│   ├── logo.png              # Bahá'í community logo
+│   └── favicon.png           # Site favicon
+├── .github/workflows/         # GitHub Actions for deployment
+├── firebase.json             # Firebase Hosting configuration
+├── next.config.ts            # Next.js configuration
+└── package.json              # Dependencies and scripts
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Design Philosophy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The website embodies the principles of the Bahá'í Faith through its design:
+
+- **Unity in Diversity**: Clean, inclusive design that welcomes all visitors
+- **Service to Humanity**: Clear call-to-action for community involvement
+- **Spiritual Growth**: Elegant typography that conveys gravitas and warmth
+- **Community Building**: Focus on local activities and connection
+
+## 🌐 Deployment
+
+The site is automatically deployed to Firebase Hosting via GitHub Actions:
+
+- **Production**: Pushes to `main` branch deploy to [sancarlosbahais.org](https://sancarlosbahais.org)
+- **Preview**: Pull requests create preview deployments
+- **Configuration**: Managed through `firebase.json` and GitHub Actions workflows
+
+### Manual Deployment
+
+```bash
+# Build the project
+pnpm build
+
+# Deploy to Firebase (requires Firebase CLI)
+firebase deploy
+```
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+### Development Guidelines
+
+- Follow TypeScript best practices
+- Use Tailwind CSS for styling
+- Maintain component modularity
+- Ensure accessibility compliance
+- Test on multiple devices and browsers
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/) for the amazing React framework
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+- [Lucide React](https://lucide.dev/) for beautiful icons
+- [Firebase](https://firebase.google.com/) for hosting and deployment
+- The Bahá'í community of San Carlos for inspiration and content
+
+## 📞 Contact
+
+For questions about this website or the Bahá'í community of San Carlos:
+
+- **Email**: info@sancarlosbahais.org
+- **Website**: [sancarlosbahais.org](https://sancarlosbahais.org)
+- **Repository**: [vramdhanie/sancarlosbahais](https://github.com/vramdhanie/sancarlosbahais)
+
+---
+
+*"The earth is but one country, and mankind its citizens."* — Bahá'u'lláh
