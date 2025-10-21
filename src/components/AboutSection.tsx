@@ -9,7 +9,7 @@ export default function AboutSection() {
           <div className="md:col-span-2">
             <div className="rounded-2xl overflow-hidden shadow-2xl sticky top-8">
               <img 
-                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072"
+                src="/images/ridvan.jpg"
                 alt="Unity in diversity"
                 className="w-full h-[500px] object-cover"
               />

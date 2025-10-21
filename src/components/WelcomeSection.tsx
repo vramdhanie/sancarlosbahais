@@ -19,7 +19,7 @@ export default function WelcomeSection() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2032"
+                src="/images/study_circle_3.jpg"
                 alt="Diverse community gathering"
                 className="w-full h-[400px] object-cover"
               />

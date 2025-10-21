@@ -19,7 +19,7 @@ export default function ActivitiesSection() {
           <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=2086"
+                src="/images/childrens_class.jpg"
                 alt="Children learning together"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -45,7 +45,7 @@ export default function ActivitiesSection() {
           <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2032"
+                src="/images/junior_youth.jpg"
                 alt="Youth engaged in activities"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -71,7 +71,7 @@ export default function ActivitiesSection() {
           <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2049"
+                src="/images/study_circle_2.jpg"
                 alt="People studying together"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -97,7 +97,7 @@ export default function ActivitiesSection() {
           <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1528605105345-5344ea20e269?q=80&w=2070"
+                src="/images/devotional.jpg"
                 alt="Community gathering for prayer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
