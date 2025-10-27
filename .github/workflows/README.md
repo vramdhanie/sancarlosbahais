@@ -2,6 +2,10 @@
 
 This repository includes automated deployment workflows for Firebase Hosting.
 
+## ✅ Configuration Complete
+
+The workflows are pre-configured to use the existing `FIREBASE_SERVICE_ACCOUNT_SANCARLOSBAHAIS` secret in your repository.
+
 ## Workflows
 
 ### 1. Preview Deploy (`.github/workflows/preview-deploy.yml`)
