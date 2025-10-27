@@ -8,7 +8,7 @@ A modern, responsive website for the Bahá'í community of San Carlos, Californi
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Firebase](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=flat-square&logo=firebase)](https://firebase.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Deployment](https://img.shields.io/badge/Deployment-sancarlosbahais.org-orange?style=flat-square)](https://sancarlosbahais.org)
+[![Deployment](https://img.shields.io/badge/Deployment-sancarlosbahai.org-orange?style=flat-square)](https://sancarlosbahai.org)
 
 ## 🌟 Features
 
@@ -110,7 +110,7 @@ The website embodies the principles of the Bahá'í Faith through its design:
 
 The site is automatically deployed to Firebase Hosting via GitHub Actions:
 
-- **Production**: Pushes to `main` branch deploy to [sancarlosbahais.org](https://sancarlosbahais.org)
+- **Production**: Pushes to `main` branch deploy to [sancarlosbahai.org](https://sancarlosbahai.org)
 - **Preview**: Pull requests create preview deployments
 - **Configuration**: Managed through `firebase.json` and GitHub Actions workflows
 
@@ -158,8 +158,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions about this website or the Bahá'í community of San Carlos:
 
-- **Email**: info@sancarlosbahais.org
-- **Website**: [sancarlosbahais.org](https://sancarlosbahais.org)
+- **Email**: info@sancarlosbahai.org
+- **Website**: [sancarlosbahai.org](https://sancarlosbahai.org)
 - **Repository**: [vramdhanie/sancarlosbahais](https://github.com/vramdhanie/sancarlosbahais)
 
 ---
