@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -15,27 +16,50 @@ export default function Header() {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/85 to-blue-900/75"></div>
       </div>
-       {/* Logo */}
-       <div className="absolute top-2 left-4 md:left-8 flex items-center gap-3">
-          <Image 
-            src="/logo.png" 
-            alt="Baha'i Symbol" 
-            width={48}
-            height={48}
-            className="h-12 w-12 filter brightness-0 invert"
-            priority
-          />
-          <div className="text-white">
-            <div className="text-2xl md:text-3xl font-bold leading-tight font-serif">
-              Bahá&apos;ís
-            </div>
-            <div className="text-lg md:text-xl font-medium leading-tight font-serif">
-              of San Carlos
-            </div>
+
+      {/* Fixed Top Navigation */}
+      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            <Link href="/" className="flex items-center gap-3">
+              <Image 
+                src="/logo.png" 
+                alt="Baha'i Symbol" 
+                width={40}
+                height={40}
+                className="h-10 w-10"
+              />
+              <div>
+                <div className="text-xl font-bold leading-tight font-serif text-gray-900">
+                  Bahá&apos;ís
+                </div>
+                <div className="text-sm font-medium leading-tight font-serif text-gray-700">
+                  of San Carlos
+                </div>
+              </div>
+            </Link>
+            <ul className="flex gap-6 text-gray-700 font-semibold">
+              <li>
+                <a href="#activities" className="hover:text-blue-700 transition">
+                  Activities
+                </a>
+              </li>
+              <li>
+                <Link href="/news" className="hover:text-blue-700 transition">
+                  News
+                </Link>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-blue-700 transition">
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+      </nav>
+
+      <div className="container mx-auto px-4 relative z-10 mt-16">
         
         <div className="max-w-3xl text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight font-serif">

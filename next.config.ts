@@ -19,6 +19,8 @@ const nextConfig: NextConfig = {
   env: {
     CUSTOM_DOMAIN: "sancarlosbahais.org",
   },
+  // Configure page extensions to include MDX
+  pageExtensions: ["ts", "tsx", "js", "jsx", "mdx"],
 };
 
 export default nextConfig;
