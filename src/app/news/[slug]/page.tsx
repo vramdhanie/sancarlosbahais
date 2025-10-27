@@ -85,7 +85,9 @@ export default async function NewsPostPage({ params }: PageProps) {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070)',
+            backgroundImage: post.image 
+              ? `url(${post.image})` 
+              : 'url(https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/85 to-blue-900/75"></div>
@@ -113,6 +115,15 @@ export default async function NewsPostPage({ params }: PageProps) {
       <article className="py-20 bg-gradient-to-b from-white to-blue-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+            {post.image && (
+              <div className="mb-8 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={post.image} 
+                  alt={post.title}
+                  className="w-full h-96 object-cover"
+                />
+              </div>
+            )}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="p-8 md:p-12">
                 <MDXContent content={post.content} />

@@ -50,12 +50,23 @@ export default function RecentNews({ posts }: RecentNewsProps) {
                 key={post.slug}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
+                {post.image && (
+                  <Link href={`/news/${post.slug}`}>
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-48 object-cover"
+                    />
+                  </Link>
+                )}
                 <div className="p-6">
                   <div className="text-sm text-blue-600 font-semibold mb-2">
                     {formatDate(post.date)}
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3 font-serif">
-                    {post.title}
+                    <Link href={`/news/${post.slug}`} className="hover:text-blue-700 transition">
+                      {post.title}
+                    </Link>
                   </h3>
                   {post.excerpt && (
                     <p className="text-gray-600 mb-4 line-clamp-3 font-sans">

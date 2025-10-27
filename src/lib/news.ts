@@ -8,6 +8,7 @@ export interface NewsPost {
   date: string;
   excerpt: string;
   content: string;
+  image?: string;
 }
 
 const newsDirectory = path.join(process.cwd(), "content/news");
@@ -35,6 +36,7 @@ export function getAllNewsPosts(): NewsPost[] {
         date: data.date || new Date().toISOString(),
         excerpt: data.excerpt || "",
         content,
+        image: data.image || undefined,
       } as NewsPost;
     });
 
@@ -60,6 +62,7 @@ export function getNewsPost(slug: string): NewsPost | null {
     date: data.date || new Date().toISOString(),
     excerpt: data.excerpt || "",
     content,
+    image: data.image || undefined,
   } as NewsPost;
 }
 

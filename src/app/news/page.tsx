@@ -97,6 +97,15 @@ export default function NewsPage() {
                     key={post.slug}
                     className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
                   >
+                    {post.image && (
+                      <Link href={`/news/${post.slug}`}>
+                        <img 
+                          src={post.image} 
+                          alt={post.title}
+                          className="w-full h-64 object-cover"
+                        />
+                      </Link>
+                    )}
                     <div className="p-8">
                       <div className="text-sm text-blue-600 font-semibold mb-3">
                         {formatDate(post.date)}

@@ -10,6 +10,7 @@ This directory contains all news articles for the Bahá'í community of San Carl
    - `title`: The article title
    - `date`: The publication date in YYYY-MM-DD format
    - `excerpt`: A brief summary (optional but recommended)
+   - `image`: Image URL for the article thumbnail (optional)
 4. Write your article content below the frontmatter using Markdown syntax
 
 ## Example
@@ -19,6 +20,7 @@ This directory contains all news articles for the Bahá'í community of San Carl
 title: "Community Service Event"
 date: "2024-04-15"
 excerpt: "Join us for a community clean-up event this Saturday at the park."
+image: "https://images.unsplash.com/photo-example"
 ---
 
 Your article content goes here.
