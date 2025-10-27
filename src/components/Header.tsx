@@ -61,26 +61,51 @@ export default function Header() {
 
       <div className="container mx-auto px-4 relative z-10 mt-16">
         
-        <div className="max-w-3xl text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight font-serif">
-            Building Community in San Carlos
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed font-sans">
-            Join us in creating a more unified, loving neighborhood through service, study, and spiritual growth
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="#contact"
-              className="bg-white text-blue-700 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition inline-flex items-center gap-2 text-lg shadow-lg"
-            >
-              Get Involved
-            </a>
-            <a
-              href="#activities"
-              className="bg-transparent text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition border-2 border-white inline-flex items-center gap-2 text-lg"
-            >
-              Learn More
-            </a>
+        <div className="grid md:grid-cols-2 gap-8 items-start w-full">
+          <div className="text-white">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight font-serif">
+              Building Community in San Carlos
+            </h1>
+            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed font-sans">
+              Join us in creating a more unified, loving neighborhood through service, study, and spiritual growth
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                className="bg-white text-blue-700 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition inline-flex items-center gap-2 text-lg shadow-lg"
+              >
+                Get Involved
+              </a>
+              <a
+                href="#activities"
+                className="bg-transparent text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition border-2 border-white inline-flex items-center gap-2 text-lg"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <div className="hidden md:flex md:items-center md:justify-center">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 max-w-sm">
+              <p className="text-lg md:text-xl text-white italic leading-relaxed font-serif mb-3">
+                &quot;The betterment of the world can be accomplished through pure and goodly deeds, through commendable and seemly conduct.&quot;
+              </p>
+              <p className="text-sm text-blue-200 font-semibold">
+                — Bahá&apos;u&apos;lláh
+              </p>
+            </div>
+          </div>
+
+          {/* Mobile: Show quote below heading */}
+          <div className="md:hidden">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <p className="text-lg text-white italic leading-relaxed font-serif mb-3">
+                &quot;The betterment of the world can be accomplished through pure and goodly deeds, through commendable and seemly conduct.&quot;
+              </p>
+              <p className="text-sm text-blue-200 font-semibold">
+                — Bahá&apos;u&apos;lláh
+              </p>
+            </div>
           </div>
         </div>
       </div>
