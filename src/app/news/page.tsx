@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getAllNewsPosts } from '@/lib/news';
 import Footer from '@/components/Footer';
 
@@ -22,9 +23,11 @@ export default function NewsPage() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-3">
-              <img 
+              <Image 
                 src="/logo.png" 
                 alt="Baha'i Symbol" 
+                width={40}
+                height={40}
                 className="h-10 w-10"
               />
               <div>
