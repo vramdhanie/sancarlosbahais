@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "sancarlosbahais"
+  },
+  "targets": {
+    "sancarlosbahais": {
+      "hosting": {
+        "preview": [
+          "sancarlosbahais"
+        ],
+        "live": [
+          "sancarlosbahais"
+        ]
+      }
+    }
   }
 }
