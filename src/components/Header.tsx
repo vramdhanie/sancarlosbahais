@@ -59,14 +59,14 @@ export default function Header() {
         </div>
       </nav>
 
-      <div className="container mx-auto px-4 relative z-10 mt-16">
+      <div className="container mx-auto px-4 relative z-10 mt-16 pb-8">
         
         <div className="grid md:grid-cols-2 gap-8 items-start w-full">
           <div className="text-white">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight font-serif">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight font-serif">
               Building Community in San Carlos
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed font-sans">
+            <p className="text-lg sm:text-xl md:text-2xl text-blue-100 mb-6 sm:mb-8 leading-relaxed font-sans">
               Join us in creating a more unified, loving neighborhood through service, study, and spiritual growth
             </p>
             <div className="flex flex-wrap gap-4">
@@ -97,12 +97,12 @@ export default function Header() {
           </div>
 
           {/* Mobile: Show quote below heading */}
-          <div className="md:hidden">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <p className="text-lg text-white italic leading-relaxed font-serif mb-3">
+          <div className="md:hidden mt-4 sm:mt-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-white/20 mx-auto max-w-full">
+              <p className="text-sm sm:text-base text-white italic leading-relaxed font-serif mb-2 sm:mb-3">
                 &quot;The betterment of the world can be accomplished through pure and goodly deeds, through commendable and seemly conduct.&quot;
               </p>
-              <p className="text-sm text-blue-200 font-semibold">
+              <p className="text-xs text-blue-200 font-semibold">
                 — Bahá&apos;u&apos;lláh
               </p>
             </div>
