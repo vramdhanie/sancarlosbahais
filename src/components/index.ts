@@ -4,3 +4,5 @@ export { default as ActivitiesSection } from "./ActivitiesSection";
 export { default as AboutSection } from "./AboutSection";
 export { default as ContactSection } from "./ContactSection";
 export { default as Footer } from "./Footer";
+export { default as RecentNews } from "./RecentNews";
+export { default as MDXContent } from "./MDXContent";

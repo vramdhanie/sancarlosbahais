@@ -5,7 +5,7 @@ import { Mail, MapPin } from 'lucide-react';
 
 export default function ContactSection() {
   const handleContact = () => {
-    window.location.href = 'mailto:info@sancarlosbahais.org?subject=Inquiry%20from%20San%20Carlos%20Bah%C3%A1%27%C3%AD%20Website';
+    window.location.href = 'mailto:info@sancarlosbahai.org?subject=Inquiry%20from%20San%20Carlos%20Bah%C3%A1%27%C3%AD%20Website';
   };
 
   useEffect(() => {
@@ -53,10 +53,10 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Email Us</h4>
                     <a
-                      href="mailto:info@sancarlosbahais.org"
+                      href="mailto:info@sancarlosbahai.org"
                       className="text-blue-600 hover:text-blue-700 text-lg break-all"
                     >
-                      info@sancarlosbahais.org
+                      info@sancarlosbahai.org
                     </a>
                     <p className="text-sm text-gray-600 mt-2">
                       We&apos;ll get back to you as soon as possible
@@ -136,10 +136,10 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">Email Us</h4>
                   <a
-                    href="mailto:info@sancarlosbahais.org"
+                    href="mailto:info@sancarlosbahai.org"
                     className="text-blue-600 hover:text-blue-700 text-lg break-all"
                   >
-                    info@sancarlosbahais.org
+                    info@sancarlosbahai.org
                   </a>
                   <p className="text-sm text-gray-600 mt-2">
                     We&apos;ll get back to you as soon as possible

@@ -1,6 +1,6 @@
 {
-  "name": "sancarlosbahaais",
-  "version": "0.1.0",
+  "name": "sancarlosbahaai",
+  "version": "0.1.1",
   "private": true,
   "description": "A modern website for the Bahá'í community of San Carlos, California",
   "keywords": [
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/vramdhanie/sancarlosbahais.git"
   },
-  "homepage": "https://sancarlosbahais.org",
+  "homepage": "https://sancarlosbahai.org",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
@@ -25,10 +25,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.0.0",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.544.0",
     "next": "15.5.4",
+    "next-mdx-remote": "^5.0.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-markdown": "^10.1.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

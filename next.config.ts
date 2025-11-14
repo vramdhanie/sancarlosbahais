@@ -17,8 +17,10 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   // Configure for production domain
   env: {
-    CUSTOM_DOMAIN: "sancarlosbahais.org",
+    CUSTOM_DOMAIN: "sancarlosbahai.org",
   },
+  // Configure page extensions to include MDX
+  pageExtensions: ["ts", "tsx", "js", "jsx", "mdx"],
 };
 
 export default nextConfig;
